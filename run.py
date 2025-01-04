@@ -9,7 +9,6 @@ os.system(exec_command)
 import torch
 from TTS.api import TTS
 import numpy as np
-import sounddevice as sd
 import soundfile as sf
 from datetime import datetime
 import requests
