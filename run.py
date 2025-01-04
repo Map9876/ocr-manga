@@ -1,4 +1,4 @@
-exec_command = 'pip install numpy torch torchvision sounddevice pypinyin'
+exec_command = 'pip install numpy torch torchvision sounddevice pypinyin TTS'
 import os
 global ok
 ok = True
