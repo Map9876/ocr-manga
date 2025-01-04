@@ -1,4 +1,4 @@
-exec_command = 'pip install numpy sounddevice pypinyin 
+exec_command = 'pip install numpy sounddevice pypinyin'
 
 global ok
 ok = True
