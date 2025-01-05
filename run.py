@@ -25,7 +25,7 @@ print("开始初始化模型:", datetime.now())
 #tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
 
 p = subprocess.Popen( 
-    ['python', '-c', 'from TTS.api  import TTS; tts = TTS("tts_models/multilingual/multi - dataset/xtts_v2"); print(tts)'], 
+    ['python', '-c', 'from TTS.api  import TTS; tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device); print(tts)'], 
     stdin = subprocess.PIPE, 
     stdout = subprocess.PIPE, 
     stderr = subprocess.PIPE, 
