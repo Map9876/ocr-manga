@@ -22,7 +22,17 @@ print(TTS().list_models())
 print("开始初始化模型:", datetime.now())
 
 # tts_models/multilingual/multi-dataset/xtts_v2是模型标识
-tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
+#tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
+
+p = subprocess.Popen( 
+    ['python', '-c', 'from TTS.api  import TTS; tts = TTS("tts_models/multilingual/multi - dataset/xtts_v2"); print(tts)'], 
+    stdin = subprocess.PIPE, 
+    stdout = subprocess.PIPE, 
+    stderr = subprocess.PIPE, 
+    text = True 
+) 
+out, err = p.communicate(input='y\n')  
+print("初始化模型完成:", datetime.now())
 
 print("初始化模型完成:", datetime.now())
 url = "https://github.com/kuemit/txt_book/raw/refs/heads/master/examples/alice_in_wonderland.txt" 
