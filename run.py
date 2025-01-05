@@ -3,7 +3,7 @@ import os
 global ok
 ok = True
 os.system(exec_command)
-
+import subprocess
 
 # -*- coding: UTF-8 -*-
 import torch
