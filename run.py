@@ -53,7 +53,8 @@ if response.status_code  == 200:
     with open("sample.wav",  "wb") as file:
         file.write(response.content)      
 
-# 从文件中读取文本
+# 从文件中读取文本 
+
 with open('demo.txt','r',encoding='utf-8') as source_file:
     content = source_file.read()
 tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
