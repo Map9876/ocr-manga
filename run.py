@@ -46,7 +46,7 @@ response = requests.get(url)
 if response.status_code  == 200:
     with open("demo.txt",  "wb") as file:
         file.write(response.content)
-url = "https://github.com/zhaominyiz/IzayoyiMikukoStudio/raw/refs/heads/master/%E4%B8%8E%E5%90%9B%E7%9A%84%E5%A4%8F%E6%97%A5%E4%B9%8B%E6%A2%A6%20.mp3" 
+url = "https://hf-mirror.com/coqui/XTTS-v2/resolve/main/samples/zh-cn-sample.wav?download=true" 
 response = requests.get(url) 
  
 if response.status_code  == 200:
