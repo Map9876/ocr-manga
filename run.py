@@ -59,7 +59,7 @@ with open('demo.txt','r',encoding='utf-8') as source_file:
     content = source_file.read()
 tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
 
-tts.tts_to_file(text="A short story is a piece of prose fiction. It can typically be read in a single sitting and focuses on a self-contained incident or series of linked incidents, with the intent of evoking a single effect or mood.", 
+tts.tts_to_file(text=content, 
                 speaker_wav="sample.wav", 
                 language="zh-cn", 
                 file_path="output.wav")
