@@ -17,12 +17,17 @@ import requests
 device = "cuda" if torch.cuda.is_available() else "cpu"
 
 # 列出可用模型
+print("可用模型是:")
 print(TTS().list_models())
 
 print("开始初始化模型:", datetime.now())
 
 # tts_models/multilingual/multi-dataset/xtts_v2是模型标识
 #tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device)
+print("下是执行的命令行，可用模型↓")
+ok = "yes | tts --model_name tts_models/multilingual/multi-dataset/xtts_v2 --list_language_idx"
+os.system(ok)
+print("上面是执行的命令行，可用模型↑")
 
 p = subprocess.Popen( 
     ['python', '-c', 'from TTS.api  import TTS; tts = TTS("tts_models/multilingual/multi-dataset/xtts_v2").to(device); print(tts)'], 
