@@ -1,3 +1,5 @@
+jdj
+
 exec_command = 'pip install numpy torch torchvision sounddevice pypinyin coqui-tts'
 import os
 global ok
