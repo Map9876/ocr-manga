@@ -28,6 +28,10 @@ jobs:
      #   run: python3 ./run.py
       - name: Run-invsr
         run: python3 ./invsr.py
+      - name: Run-invsr
+        run: python3 ./easyocr.py
+
+        
         
       - name: Commit
         env:
