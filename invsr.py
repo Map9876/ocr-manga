@@ -31,6 +31,6 @@ if response.status_code  == 200:
 
 
 run =[
-    "python InvSR/inference_invsr.py InvSR/test.jpg -i  -o InvSR/output.jpg --num_steps 1" 
+    "python InvSR/inference_invsr.py -i InvSR/test.jpg -o InvSR/output.jpg --num_steps 1" 
 ]
 subprocess.run(run,  shell=True, check=True)
