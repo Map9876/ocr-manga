@@ -9,6 +9,8 @@ lines = [
     "mkdir InvSR",
     "git clone https://github.com/zsyOAOA/InvSR.git",
     "cd InvSR",    
+    "pwd",
+    "echo '上面是路径'"
     "pip install torch==2.4.0 torchvision==0.19.0 torchaudio==2.4.0 --index-url https://download.pytorch.org/whl/cu121",  
     "pip install -U xformers==0.0.27.post2  --index-url https://download.pytorch.org/whl/cu121",  
     "pip install -e '.[torch]'", 
